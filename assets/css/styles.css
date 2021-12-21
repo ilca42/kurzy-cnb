@@ -1,0 +1,18 @@
+.row.row-info {
+  padding: 10px;
+}
+
+.col.col-info {
+  padding: 5px;
+  margin-bottom: 5px;
+  min-width: 170px;
+}
+
+#getPocet {
+  max-width: 136px;
+}
+
+#buttonDatum {
+  min-width: 99px;
+}
+

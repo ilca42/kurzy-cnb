@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>kurzy ČNB</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/fa16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/fa32.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <section style="padding-top: 50px;padding-bottom: 10px;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-primary">Kurzy devizového trhu&nbsp;ČNB</h1>
+                    <p class="text-secondary">ver. 1.0 (20210502)<br></p>
+                    <p class="text-info">! Aplikace neslouží ke komerčním účelům. Byla vytvořena za účelem osobního studia programování. Zobrazovaná data jsou aktuální a získávána prostřednictvím <a href="https://www.cnb.cz/cs/casto-kladene-dotazy/Kurzy-devizoveho-trhu-na-www-strankach-CNB/" target="_blank">API ČNB</a>&nbsp;.<br></p>
+                    <p class="text-info">ČNB vyhlašuje kurzy devizového trhu&nbsp;k danému dni, které se aktualizují jedenkrát denně a to vždy v pracovní dny po 14:30 hodin.<br>●&nbsp;datum - pro které byl kurz vyhlášen ve formátu DD.MM.RRRR <br>● pořadí - #pořadové číslo zveřejňovaných kurzů v&nbsp;rámci roku<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding-top: 50px;padding-bottom: 10px;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="kurzy"></div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-info">Pro zobrazení kurzovní tabulky požadovaného dne vyberte datum a stiskněte tlačítko "Zobrazit".&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="row row-info">
+                        <div class="col text-center text-sm-left col-info"><input id="getDatum" type="date"></div>
+                        <div class="col text-center text-sm-right text-lg-left"><button class="btn btn-primary" id="buttonDatum" type="button">Zobrazit</button></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-info">Pro přepočet kurzu k zadanému množství zadejte hodnotu (celé číslo) a stiskněte tlačítko "Přepočítat".</p>
+                        </div>
+                    </div>
+                    <div class="row row-info">
+                        <div class="col text-center text-sm-left col-info"><input type="text" id="getPocet" value="1" placeholder="celé číslo .."></div>
+                        <div class="col text-center text-sm-right text-lg-left"><button class="btn btn-primary" id="buttonPocet" type="button">Přepočítat</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/kurzy.js"></script>
+</body>
+
+</html>
