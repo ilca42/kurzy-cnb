@@ -24,3 +24,6 @@ Indie|rupie|100|INR|28,975
 - AJAXem dotahovaná data prostřednictvím PhP skriptu z https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt?date=DD.MM.RRRR jsou zpracována do tabulky
 - "Aplikace" umožňuje dotahovat/zobrazovat data kurzů zvoleného dne, které posílá v URL parametru ?date ČNB API
 - "Aplikace" umožňuje přepočíst odpovídající kurz k zadanému množství Kč
+
+### Ukázka
+- dostupná [ZDE](http://studio42.wz.cz/kurzy-cnb/)
